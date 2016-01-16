@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normilize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -31,7 +32,7 @@
           </div>
           
           <div class="col-md-6">
-            <nav class="header-nav">
+            <nav class="header-nav main-menu">
               <ul>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="">Оплата</a></li>
@@ -40,11 +41,13 @@
             </nav>
           </div>
           
-          <div class="col-md-4">
-            <a href="#" class="call-back" id="call-back">Перезвоните мне</a>
-            <div class="header-contacts">
-              <p class="header-phone">8 (800) 500-50-11</p>
-              <span class="header-working-time">С 9:00 до 21:00</span>
+          <div class="col-md-4 no-pr">
+            <div class="header-right-side">
+              <a href="#" class="call-back" id="call-back">Позвоните мне</a>
+              <div class="header-contacts">
+                <p class="header-phone">8 (800) 500-50-11</p>
+                <span class="header-working-time">С 9:00 до 21:00</span>
+              </div>
             </div>
           </div>
           
@@ -60,13 +63,13 @@
           <div class="row">
            
             <div class="col-md-5 promo-text-wrap">
-              <h1 class="section-header">Будь рядом</h1>
-              <p class="promo-text">С видеоняней вы сможете наблюдать за ребёнком из любой точки планеты</p>
-              <a href="catalog.html" class="promo-btn">Выбрать видеоняню</a>
+              <h1 class="section-header promo-title">Будь рядом</h1>
+              <p class="promo-text">С видеоняней вы сможете наблюдать <br>за ребёнком из любой точки планеты</p>
+              <a href="catalog.html" class="pink-btn promo-btn">Выбрать видеоняню</a>
             </div>
             
             <div class="col-md-7 promo-img">
-              <img src="img/promo-img.jpg" alt="Промо-картинка">
+              <img class="img-responsive" src="img/promo-img.jpg" alt="Промо-картинка">
             </div>
             
           </div>
@@ -78,35 +81,46 @@
         <div class="container">
           <div class="row">
            
-            <div class="row">
-              <div class="col-md-12">
-                <h2 class="section-title">Мы предлагаем Вам</h2>
-              </div>
-            </div>
-            
-            <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title advantages-title">Мы предлагаем Вам</h2>
+          </div>
              
-              <div class="col-md-3 advantages-item">
-                <h3 class="secrion-subtitle">Доставка</h3>
+          <div class="col-md-3">
+            <a href="#">
+              <div class="card-item advantages-item">
+                <h3 class="section-subtitle advantages-icon-delivery">Доставка</h3>
                 <p class="section-text">Бесплатно по СПБ и МСК. По России от 500 рублей курьеской доставкой.</p>
               </div>
-              
-              <div class="col-md-3 advantages-item">
-                <h3 class="secrion-subtitle">Оплата</h3>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <div class="card-item advantages-item">
+                <h3 class="section-subtitle advantages-icon-pay">Оплата</h3>
                 <p class="section-text">Картой, наличными, Яндекс.Деньги, Webmoney, через терминал.</p>
               </div>
-              
-              <div class="col-md-3 advantages-item">
-                <h3 class="secrion-subtitle">Гарантии</h3>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <div class="card-item advantages-item">
+                <h3 class="section-subtitle advantages-icon-guarantee">Гарантии</h3>
                 <p class="section-text">Мы предоставляем 2 года гарантии на все наши товары.</p>
               </div>
-              
-              <div class="col-md-3 advantages-item">
-                <h3 class="secrion-subtitle">Возврат</h3>
+            </a> 
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <div class="card-item advantages-item">
+                <h3 class="section-subtitle advantages-icon-return">Возврат</h3>
                 <p class="section-text">Вы можете вернуть неподошедший товар в течение 14 дней.</p>
               </div>
-              
-            </div>
+            </a>
+          </div>
+
           </div>
         </div>
       </section>
@@ -116,80 +130,89 @@
         <div class="container">
           <div class="row">
             
-            <div class="row">
-              <div class="col-md-12">
-                <h2 class="section-title">Популярные видеоняни</h2>
-              </div>
-            </div>
-            
-            <div class="row">
-             
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">15 700 &#8381;</p>
-                
+          <div class="col-md-12">
+            <h2 class="section-title">Популярные видеоняни</h2>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card-item">
+              <p class="card-item-price">15 700 &#8381;</p>
+
+              <a href="#">
                 <div class="card-item-img">
                   <img src="img/luvion-prestige-touch.jpg" alt="Luvion Prestige Touch">
                 </div>
-                
-                <h3 class="section-subtitle card-item-title">Luvion Prestige Touch</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
+              </a>
+
+              <h3 class="section-subtitle card-item-title">Luvion Prestige Touch</h3>
+
+              <div class="card-item-buttons">
+                <div class="col-md-5 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn">Посмотреть</a></div>
               </div>
-              
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">8 900 &#8381;</p>
-                
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card-item">
+              <p class="card-item-price">8 900 &#8381;</p>
+
+              <a href="#">
                 <div class="card-item-img">
                   <img src="img/luvion-essential.jpg" alt="Luvion Essential">
                 </div>
-                
-                <h3 class="section-subtitle card-item-title">Luvion Essential</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
+              </a>
+
+              <h3 class="section-subtitle card-item-title">Luvion Essential</h3>
+
+              <div class="card-item-buttons">
+                <div class="col-md-5 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn">Посмотреть</a></div>
               </div>
-              
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">9 990 &#8381;</p>
-                
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card-item">
+              <p class="card-item-price">9 990 &#8381;</p>
+
+              <a href="#">
                 <div class="card-item-img">
                   <img src="img/luvion-platinum-2.jpg" alt="Luvion Platinum 2">
                 </div>
-                
-                <h3 class="section-subtitle card-item-title">Luvion Platinum 2</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
+              </a>
+
+              <h3 class="section-subtitle card-item-title">Luvion Platinum 2</h3>
+
+              <div class="card-item-buttons">
+                <div class="col-md-5 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn">Посмотреть</a></div>
               </div>
-              
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">10 900 &#8381;</p>
-                
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card-item">
+              <p class="card-item-price">10 900 &#8381;</p>
+
+              <a href="#">
                 <div class="card-item-img">
                   <img src="img/luvion-grand-elite-2.jpg" alt="Luvion Grand Elite 2">
                 </div>
-                
-                <h3 class="section-subtitle card-item-title">Luvion Grand Elite 2</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
+              </a>
+
+              <h3 class="section-subtitle card-item-title">Luvion Grand Elite 2</h3>
+
+              <div class="card-item-buttons">
+                <div class="col-md-5 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn">Посмотреть</a></div>
               </div>
             </div>
-            
-            <div class="col-md-3 col-offset-9">
-              <a href="#" class="look-all-btn">Все популярные видеоняни</a>
-            </div>
-            
           </div>
+        </div>
+
+        <a href="#" class="grey-underline-link look-all-btn">Все популярные видеоняни</a>
+            
         </div>
       </section>
       
@@ -198,93 +221,102 @@
         <div class="container">
           <div class="row">
            
-            <div class="row">
-              <div class="col-md-12">
-                <h2 class="section-title">Видеоняни со скидкой</h2>
-              </div>
+            <div class="col-md-12">
+              <h2 class="section-title">Видеоняни со скидкой</h2>
             </div>
-            
-            <div class="row">
-             
-              <div class="col-md-3 card-item">
+
+            <div class="col-md-3">
+              <div class="card-item">
                 <p class="card-item-price">8 850 &#8381;<span class="del-price">9 200</span></p>
-                
-                <div class="card-item-img">
-                  <img src="img/motorola-mbp36.jpg" alt="Motorola MBP36">
-                </div>
-                
+
+                <a href="#">
+                  <div class="card-item-img">
+                    <img src="img/motorola-mbp36.jpg" alt="Motorola MBP36">
+                  </div>
+                </a>
+
                 <h3 class="section-subtitle card-item-title">Motorola MBP36</h3>
-                
+
                 <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
+                  <div class="col-md-5 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                  <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn">Посмотреть</a></div>
                 </div>
               </div>
-              
-              <div class="col-md-3 card-item">
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-item">
                 <p class="card-item-price">6 940 &#8381;<span class="del-price">7 500</span></p>
-                
-                <div class="card-item-img">
-                  <img src="img/motorola-mbp26.jpg" alt="Motorola MBP26">
-                </div>
-                
+
+                <a href="#">
+                  <div class="card-item-img">
+                    <img src="img/motorola-mbp26.jpg" alt="Motorola MBP26">
+                  </div>
+                </a>
+
                 <h3 class="section-subtitle card-item-title">Motorola MBP26</h3>
-                
+
                 <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
+                  <div class="col-md-5 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                  <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn">Посмотреть</a></div>
                 </div>
               </div>
-              
-              <div class="col-md-3 card-item">
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-item">
                 <p class="card-item-price">8 984 &#8381;<span class="del-price">9 457</span></p>
-                
-                <div class="card-item-img">
-                  <img src="img/philips-avent-scd603.jpg" alt="Philips AVENT SCD603/00">
-                </div>
-                
+
+                <a href="#">
+                  <div class="card-item-img">
+                    <img src="img/philips-avent-scd603.jpg" alt="Philips AVENT SCD603/00">
+                  </div>
+                </a>
+
                 <h3 class="section-subtitle card-item-title">Philips AVENT SCD603/00</h3>
-                
+
                 <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
+                  <div class="col-md-5 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                  <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn">Посмотреть</a></div>
                 </div>
               </div>
-              
-              <div class="col-md-3 card-item">
+            </div>
+
+            <div class="col-md-3">
+              <div class="card-item">
                 <p class="card-item-price">14 999 &#8381;<span class="del-price">16 990</span></p>
-                
-                <div class="card-item-img">
-                  <img src="img/switel-bcf-985.jpg" alt="Switel BCF 985">
-                </div>
-                
+
+                <a href="#">
+                  <div class="card-item-img">
+                    <img src="img/switel-bcf-985.jpg" alt="Switel BCF 985">
+                  </div>
+                </a>
+
                 <h3 class="section-subtitle card-item-title">Switel BCF 985</h3>
-                
+
                 <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
+                  <div class="col-md-5 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                  <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn">Посмотреть</a></div>
                 </div>
               </div>
             </div>
-            
-            <div class="col-md-3 col-offset-9">
-              <a href="#" class="look-all-btn">Все видеоняни со скидкой</a>
-            </div>
-            
-          </div>
+          </div>  
+
+          <a href="#" class="grey-underline-link look-all-btn">Все видеоняни со скидкой</a>
+             
         </div>
       </section>
     </main>
     
     <!-- footer -->
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="row">
          
           <div class="col-md-5">
             <div class="social">
+              <p class="footer-text social-menu-span">Мы в социальных сетях:</p>
               <ul class="social-list">
-                <p class="footer-text">Мы в социальных сетях:</p>
                 <li><a class="social-vk" href="#"></a></li>
                 <li><a class="social-twitter" href="#"></a></li>
                 <li><a class="social-google" href="#"></a></li>
@@ -303,7 +335,7 @@
               </ul>
             </nav>
             
-            <p class="footer-text">&copy; 2015, BabyCam.</p>
+            <p class="footer-text footer-copy">&copy; 2015, BabyCam.</p>
           </div>
         </div>
       </div>

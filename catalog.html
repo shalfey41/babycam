@@ -6,12 +6,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Babycam — интернет-магазин видеонянь</title>
+    <title>Каталог | Babycam</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normilize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -31,7 +32,7 @@
           </div>
           
           <div class="col-md-6">
-            <nav class="header-nav">
+            <nav class="header-nav main-menu">
               <ul>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="">Оплата</a></li>
@@ -40,11 +41,13 @@
             </nav>
           </div>
           
-          <div class="col-md-4">
-            <a href="#" class="call-back" id="call-back">Перезвоните мне</a>
-            <div class="header-contacts">
-              <p class="header-phone">8 (800) 500-50-11</p>
-              <span class="header-working-time">С 9:00 до 21:00</span>
+          <div class="col-md-4 no-pr">
+            <div class="header-right-side">
+              <a href="#" class="call-back" id="call-back">Позвоните мне</a>
+              <div class="header-contacts">
+                <p class="header-phone">8 (800) 500-50-11</p>
+                <span class="header-working-time">С 9:00 до 21:00</span>
+              </div>
             </div>
           </div>
           
@@ -54,249 +57,268 @@
     
     <!-- main -->
     <main>
-      <div class="container">
-        <div class="row">
-          <aside class="col-md-3 product-filter">
-            
-          </aside>
-          
-          <section class="col-md-9 catalog">
-            
-          </section>
-        </div>
-      </div>
-     
-      <!-- promo -->
-      <section class="promo">
+     <!-- catalog -->
+      <section class="catalog">
         <div class="container">
           <div class="row">
-           
-            <div class="col-md-5 promo-text-wrap">
-              <h1 class="section-header">Будь рядом</h1>
-              <p class="promo-text">С видеоняней вы сможете наблюдать за ребёнком из любой точки планеты</p>
-              <a href="#" class="promo-btn">Выбрать видеоняню</a>
-            </div>
-            
-            <div class="col-md-7 promo-img">
-              <img src="img/promo-img.jpg" alt="Промо-картинка">
-            </div>
-            
-          </div>
-        </div>
-      </section>
-      
-      <!-- advantages -->
-      <section class="advantages">
-        <div class="container">
-          <div class="row">
-           
-            <div class="row">
-              <div class="col-md-12">
-                <h2 class="section-title">Мы предлагаем Вам</h2>
+            <div class="col-md-3">
+              <div class="how-to-choose">
+                <a href="#" class="how-to-choose-btn">Как выбрать видеоняню?</a>
+              </div>
+              <div class="catalog-filter">
+                <form class="catalog-filter-form" action="">
+                  <dl class="catalog-filter-item">
+                    <dt class="catalog-filter-title">Цена</dt>
+                    <dd>
+                      <p class="skip-value">
+                        от <span class="skip-value-numbers-color" id="skip-value-lower"></span>
+                      </p>
+                      <p class="skip-value pull-right">
+                        до <span class="skip-value-numbers-color" id="skip-value-upper"></span>
+                      </p>
+                        <div id="skipstep"></div>
+                        <span class="skip-step-number-left">6500</span>
+                        <span class="skip-step-number-right">23900</span>
+                    </dd>
+                  </dl>
+                  
+                  <dl>
+                    <dt class="catalog-filter-title">Функции</dt>
+                    <dd>
+                      <input type="checkbox" name="" id="1" />
+                      <label class="filter-checkbox" for="1">Запись видео</label><br> 
+                      <input type="checkbox" name="" id="2" />
+                      <label class="filter-checkbox" for="2">Инфракрасная камера</label><br>
+                      <input type="checkbox" name="" id="3" />
+                      <label class="filter-checkbox" for="3">Двустороння связь</label><br>
+                      <input type="checkbox" name="" id="4" />
+                      <label class="filter-checkbox" for="4">Колыбельные мелодии</label><br>
+                      <input type="checkbox" name="" id="5" />
+                      <label class="filter-checkbox" for="5">Контроль t в комнате</label><br>
+                      <input type="checkbox" name="" id="6" />
+                      <label class="filter-checkbox" for="6">Контроль дыхания</label><br>
+                      <input type="checkbox" name="" id="7" />
+                      <label class="filter-checkbox" for="7">Активация голосом</label><br>
+                      <input type="checkbox" name="" id="8" />
+                      <label class="filter-checkbox" for="8">Регулировка звука</label><br>
+                      <input type="checkbox" name="" id="9" />
+                      <label class="filter-checkbox" for="9">Ночник</label><br>
+                      <input type="checkbox" name="" id="10" />
+                      <label class="filter-checkbox" for="10">Регулировка
+направления камеры</label><br>
+                    </dd>
+                  </dl>
+                  
+                  <dl>
+                    <dt class="catalog-filter-title">Производители</dt>
+                    <dd>
+                      <input type="checkbox" name="" id="11" /><label class="filter-checkbox" for="11">Запись видео</label><br> 
+                      <input type="checkbox" name="" id="12" /><label class="filter-checkbox" for="12">Инфракрасная камера</label><br>
+                      <input type="checkbox" name="" id="13" /><label class="filter-checkbox" for="13">Двустороння связь</label><br>
+                      <input type="checkbox" name="" id="14" /><label class="filter-checkbox" for="14">Колыбельные мелодии</label><br>
+                      <input type="checkbox" name="" id="15" /><label class="filter-checkbox" for="15">Контроль t в комнате</label><br>
+                    </dd>
+                  </dl>
+                  
+                  <div class="col-md-12 no-pl no-pr">
+                    <div class="col-md-6 no-pl">
+                      <input type="submit" value="Применить">
+                    </div>
+                    <div class="col-md-6 no-pr">
+                      <input type="reset" value="Сбросить">
+                    </div>
+                  </div>
+                  
+                  
+                </form>
               </div>
             </div>
-            
-            <div class="row">
-             
-              <div class="col-md-3 advantages-item">
-                <h3 class="secrion-subtitle">Доставка</h3>
-                <p class="section-text">Бесплатно по СПБ и МСК. По России от 500 рублей курьеской доставкой.</p>
+            <div class="col-md-9">
+              <h1 class="section-header catalog-header">Каталог</h1>
+              <div class="col-md-9 no-pl">
+                <ul class="sort-by catalog-product-sort">
+                  <li class="section-text">Сортировать по:</li>
+                  <li><a class="active" href="#">дате</a></li>
+                  <li><a href="#">рейтингу</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 product-count no-pr">
+                <span>Товаров: 9</span>
               </div>
               
-              <div class="col-md-3 advantages-item">
-                <h3 class="secrion-subtitle">Оплата</h3>
-                <p class="section-text">Картой, наличными, Яндекс.Деньги, Webmoney, через терминал.</p>
-              </div>
-              
-              <div class="col-md-3 advantages-item">
-                <h3 class="secrion-subtitle">Гарантии</h3>
-                <p class="section-text">Мы предоставляем 2 года гарантии на все наши товары.</p>
-              </div>
-              
-              <div class="col-md-3 advantages-item">
-                <h3 class="secrion-subtitle">Возврат</h3>
-                <p class="section-text">Вы можете вернуть неподошедший товар в течение 14 дней.</p>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- popular -->
-      <section class="popular">
-        <div class="container">
-          <div class="row">
-            
-            <div class="row">
-              <div class="col-md-12">
-                <h2 class="section-title">Популярные видеоняни</h2>
-              </div>
-            </div>
-            
-            <div class="row">
-             
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">15 700 &#8381;</p>
-                
-                <div class="card-item-img">
-                  <img src="img/luvion-prestige-touch.jpg" alt="Luvion Prestige Touch">
-                </div>
-                
-                <h3 class="section-subtitle card-item-title">Luvion Prestige Touch</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
-              </div>
-              
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">8 900 &#8381;</p>
-                
-                <div class="card-item-img">
-                  <img src="img/luvion-essential.jpg" alt="Luvion Essential">
-                </div>
-                
-                <h3 class="section-subtitle card-item-title">Luvion Essential</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
-              </div>
-              
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">9 990 &#8381;</p>
-                
-                <div class="card-item-img">
-                  <img src="img/luvion-platinum-2.jpg" alt="Luvion Platinum 2">
-                </div>
-                
-                <h3 class="section-subtitle card-item-title">Luvion Platinum 2</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
-              </div>
-              
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">10 900 &#8381;</p>
-                
-                <div class="card-item-img">
-                  <img src="img/luvion-grand-elite-2.jpg" alt="Luvion Grand Elite 2">
-                </div>
-                
-                <h3 class="section-subtitle card-item-title">Luvion Grand Elite 2</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-3 col-offset-9">
-              <a href="#" class="look-all-btn">Все популярные видеоняни</a>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-      
-      <!-- discount -->
-      <section class="discount">
-        <div class="container">
-          <div class="row">
-           
-            <div class="row">
-              <div class="col-md-12">
-                <h2 class="section-title">Видеоняни со скидкой</h2>
-              </div>
-            </div>
-            
-            <div class="row">
-             
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">8 850 &#8381;<span class="del-price">9 200</span></p>
-                
-                <div class="card-item-img">
-                  <img src="img/motorola-mbp36.jpg" alt="Motorola MBP36">
-                </div>
-                
-                <h3 class="section-subtitle card-item-title">Motorola MBP36</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
-              </div>
-              
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">6 940 &#8381;<span class="del-price">7 500</span></p>
-                
-                <div class="card-item-img">
-                  <img src="img/motorola-mbp26.jpg" alt="Motorola MBP26">
-                </div>
-                
-                <h3 class="section-subtitle card-item-title">Motorola MBP26</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
-              </div>
-              
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">8 984 &#8381;<span class="del-price">9 457</span></p>
-                
-                <div class="card-item-img">
-                  <img src="img/philips-avent-scd603.jpg" alt="Philips AVENT SCD603/00">
-                </div>
-                
-                <h3 class="section-subtitle card-item-title">Philips AVENT SCD603/00</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
-              </div>
-              
-              <div class="col-md-3 card-item">
-                <p class="card-item-price">14 999 &#8381;<span class="del-price">16 990</span></p>
-                
-                <div class="card-item-img">
-                  <img src="img/switel-bcf-985.jpg" alt="Switel BCF 985">
-                </div>
-                
-                <h3 class="section-subtitle card-item-title">Switel BCF 985</h3>
-                
-                <div class="card-item-buttons">
-                  <a href="#" class="card-item-compare-btn">Сравнить</a>
-                  <a href="#" class="card-item-look-btn">Посмотреть</a>
-                </div>
+              <div class="row">
+                <section class="col-md-12 catalog-cards no-pl no-pr">
+
+                  <div class="col-md-4 catalog-product-card">
+                    <div class="card-item catalog-product-card-item">
+                      <p class="card-item-price">8 850 &#8381;<span class="del-price">9 200</span></p>
+
+                      <a href="#">
+                        <div class="card-item-img">
+                          <img src="img/motorola-mbp36.jpg" alt="Motorola MBP36">
+                        </div>
+                      </a>
+
+                      <h3 class="section-subtitle card-item-title">Motorola MBP36</h3>
+
+                      <div class="card-item-buttons">
+                        <div class="col-md-6 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                        <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn catalog-product-card-buy-btn">Купить</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 catalog-product-card">
+                    <div class="card-item catalog-product-card-item">
+                      <p class="card-item-price">6 940 &#8381;<span class="del-price">7 500</span></p>
+
+                      <a href="#">
+                        <div class="card-item-img">
+                          <img src="img/motorola-mbp26.jpg" alt="Motorola MBP26">
+                        </div>
+                      </a>
+
+                      <h3 class="section-subtitle card-item-title">Motorola MBP26</h3>
+
+                      <div class="card-item-buttons">
+                        <div class="col-md-6 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                        <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn catalog-product-card-buy-btn">Купить</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 catalog-product-card">
+                    <div class="card-item catalog-product-card-item">
+                      <p class="card-item-price">8 984 &#8381;<span class="del-price">9 457</span></p>
+
+                      <a href="#">
+                        <div class="card-item-img">
+                          <img src="img/philips-avent-scd603.jpg" alt="Philips AVENT SCD603/00">
+                        </div>
+                      </a>
+
+                      <h3 class="section-subtitle card-item-title">Philips AVENT SCD603/00</h3>
+
+                      <div class="card-item-buttons">
+                        <div class="col-md-6 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                        <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn catalog-product-card-buy-btn">Купить</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 catalog-product-card">
+                    <div class="card-item catalog-product-card-item">
+                      <p class="card-item-price">14 999 &#8381;<span class="del-price">16 990</span></p>
+
+                      <a href="#">
+                        <div class="card-item-img">
+                          <img src="img/switel-bcf-985.jpg" alt="Switel BCF 985">
+                        </div>
+                      </a>
+
+                      <h3 class="section-subtitle card-item-title">Switel BCF 985</h3>
+
+                      <div class="card-item-buttons">
+                        <div class="col-md-6 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                        <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn catalog-product-card-buy-btn">Купить</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 catalog-product-card">
+                    <div class="card-item catalog-product-card-item">
+                      <p class="card-item-price">15 700 &#8381;</p>
+
+                      <a href="#">
+                        <div class="card-item-img">
+                          <img src="img/luvion-prestige-touch.jpg" alt="Luvion Prestige Touch">
+                        </div>
+                      </a>
+
+                      <h3 class="section-subtitle card-item-title">Luvion Prestige Touch</h3>
+
+                      <div class="card-item-buttons">
+                        <div class="col-md-6 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                        <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn catalog-product-card-buy-btn">Купить</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 catalog-product-card">
+                    <div class="card-item catalog-product-card-item">
+                      <p class="card-item-price">8 900 &#8381;</p>
+
+                      <a href="#">
+                        <div class="card-item-img">
+                          <img src="img/luvion-essential.jpg" alt="Luvion Essential">
+                        </div>
+                      </a>
+
+                      <h3 class="section-subtitle card-item-title">Luvion Essential</h3>
+
+                      <div class="card-item-buttons">
+                        <div class="col-md-6 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                        <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn catalog-product-card-buy-btn">Купить</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 catalog-product-card">
+                    <div class="card-item catalog-product-card-item">
+                      <p class="card-item-price">9 990 &#8381;</p>
+
+                      <a href="#">
+                        <div class="card-item-img">
+                          <img src="img/luvion-platinum-2.jpg" alt="Luvion Platinum 2">
+                        </div>
+                      </a>
+
+                      <h3 class="section-subtitle card-item-title">Luvion Platinum 2</h3>
+
+                      <div class="card-item-buttons">
+                        <div class="col-md-6 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                        <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn catalog-product-card-buy-btn">Купить</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 catalog-product-card">
+                    <div class="card-item catalog-product-card-item">
+                      <p class="card-item-price">10 900 &#8381;</p>
+
+                      <a href="#">
+                        <div class="card-item-img">
+                          <img src="img/luvion-grand-elite-2.jpg" alt="Luvion Grand Elite 2">
+                        </div>
+                      </a>
+
+                      <h3 class="section-subtitle card-item-title">Luvion Grand Elite 2</h3>
+
+                      <div class="card-item-buttons">
+                        <div class="col-md-6 card-item-btn"><a href="#" class="grey-underline-link">Сравнить</a></div>
+                        <div class="col-md-6 card-item-btn"><a href="#" class="pink-btn card-item-look-btn catalog-product-card-buy-btn">Купить</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </section>
               </div>
             </div>
-            
-            <div class="col-md-3 col-offset-9">
-              <a href="#" class="look-all-btn">Все видеоняни со скидкой</a>
-            </div>
-            
           </div>
         </div>
       </section>
     </main>
     
     <!-- footer -->
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="row">
          
           <div class="col-md-5">
             <div class="social">
+              <p class="footer-text social-menu-span">Мы в социальных сетях:</p>
               <ul class="social-list">
-                <p class="footer-text">Мы в социальных сетях:</p>
                 <li><a class="social-vk" href="#"></a></li>
                 <li><a class="social-twitter" href="#"></a></li>
                 <li><a class="social-google" href="#"></a></li>
@@ -315,7 +337,7 @@
               </ul>
             </nav>
             
-            <p class="footer-text">&copy; 2015, BabyCam.</p>
+            <p class="footer-text footer-copy">&copy; 2015, BabyCam.</p>
           </div>
         </div>
       </div>
@@ -324,6 +346,7 @@
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>
