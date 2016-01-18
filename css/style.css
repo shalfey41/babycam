@@ -1115,6 +1115,7 @@ button {
 .modal-open {
   overflow: hidden;
 }
+
 .modal {
   position: fixed;
   top: 0;
@@ -1127,6 +1128,7 @@ button {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
@@ -1134,20 +1136,24 @@ button {
   -ms-transform: translate(0, -25%);
   transform: translate(0, -25%);
 }
+
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .modal-dialog {
   position: relative;
   margin: 10px;
   width: auto;
 }
+
 .modal-content {
   position: relative;
   outline: 0;
@@ -1158,6 +1164,7 @@ button {
   background-clip: padding-box;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
 }
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -1167,44 +1174,55 @@ button {
   z-index: 1040;
   background-color: #000000;
 }
+
 .modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
 }
+
 .modal-backdrop.in {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .modal-header .close {
   margin-top: -2px;
 }
+
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
 }
+
 .modal-body {
   position: relative;
   padding: 15px;
 }
+
 .modal-footer {
   padding: 15px;
   border-top: 1px solid #e5e5e5;
   text-align: right;
 }
+
 .modal-footer .btn + .btn {
   margin-bottom: 0;
   margin-left: 5px;
 }
+
 .modal-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
+
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
+
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -1212,9 +1230,11 @@ button {
   width: 50px;
   height: 50px;
 }
+
 .modal-lg {
   width: 900px;
 }
+
 .clearfix:before,
 .clearfix:after,
 .container:before,
@@ -1232,6 +1252,7 @@ button {
   display: table;
   content: " ";
 }
+
 .clearfix:after,
 .container:after,
 .container-fluid:after,
@@ -1241,26 +1262,33 @@ button {
 .modal-footer:after {
   clear: both;
 }
+
 .center-block {
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+
 .pull-right {
   float: right !important;
 }
+
 .pull-left {
   float: left !important;
 }
+
 .hide {
   display: none !important;
 }
+
 .show {
   display: block !important;
 }
+
 .invisible {
   visibility: hidden;
 }
+
 .text-hide {
   border: 0;
   background-color: transparent;
@@ -1268,9 +1296,11 @@ button {
   text-shadow: none;
   font: 0/0 a;
 }
+
 .hidden {
   display: none !important;
 }
+
 .affix {
   position: fixed;
 }
