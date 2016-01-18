@@ -41,7 +41,7 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+   
     <!-- header -->
     <header class="header">
       <div class="container">
@@ -63,7 +63,7 @@
           
           <div class="col-md-4 no-pr">
             <div class="header-right-side">
-              <a href="#" class="call-back" id="call-back">Позвоните мне</a>
+              <a href="#" class="call-back" data-toggle="modal" data-target="#modal-callback">Позвоните мне</a>
               <div class="header-contacts">
                 <p class="header-phone">8 (800) 500-50-11</p>
                 <span class="header-working-time">С 9:00 до 21:00</span>
@@ -360,6 +360,25 @@
         </div>
       </div>
     </footer>
+    
+    <!-- Modals -->
+    <div id="modal-callback" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>

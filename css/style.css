@@ -306,6 +306,7 @@ button {
   border-bottom: 1px dashed #ff5278;
   color: #ff5278;
   font-size: 12px;
+  outline: none;
 }
 
 .call-back:hover {
